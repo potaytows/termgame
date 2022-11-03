@@ -20,8 +20,9 @@
                                 {{ session('status') }}
                             </div>
                         @endif
-                        
+
                         ยินดีต้อนรับเข้าสู่เว็ป Termgame!
+                        Powered with GitHUb (testing only)
 
                     </div>
                 </div>
