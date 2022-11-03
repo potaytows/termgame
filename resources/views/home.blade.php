@@ -22,7 +22,7 @@
                         @endif
 
                         ยินดีต้อนรับเข้าสู่เว็ป Termgame!
-                        Powered with GitHUb (testing only)
+                        Powered by Takachi Yakinuma
 
                     </div>
                 </div>

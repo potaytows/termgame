@@ -16,7 +16,7 @@
                     @endif
 
                     {{ __('You are logged in!') }}
-                    You are admin
+                    Welcome to this website Powered by ME 
                     
 
                 
