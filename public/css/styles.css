@@ -1,0 +1,253 @@
+.gameimg{
+    height:400px;
+}
+
+* {
+    font-family: 'Roboto', 'Kanit', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* User Prod Blade */
+.new_product_box {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgba(0, 0, 0, 0.137);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+    
+.new_color_button {
+    color: white !important;
+    font-weight: 400 !important;
+    background-color: rgb(0, 174, 67) !important;
+}
+
+/* Navbar */
+.new_navbar_css {
+    background-color: rgb(231, 208, 3);
+}
+
+nav.new_navbar_css div ul li a {
+    color: rgb(27, 27, 27) !important;
+    font-weight: 500;
+    padding-left: 1rem;
+}
+
+nav.new_navbar_css div ul li a:hover {
+    color: rgb(255, 0, 0) !important;
+
+    transition: 0.1s;
+}
+
+.new_nav_dropdown .dropdown-menu a:hover {
+    background-color: rgb(224, 224, 224);
+}
+
+/* Footer */
+div#footer {
+    margin-top: auto;
+    font-weight: 400;
+    box-shadow: 0px -5px 75px rgba(43, 42, 42, 0.211);
+}
+
+div#footer h3 {
+    font-weight: 900;
+}
+
+.new_footer div ul li {
+    margin-bottom: 0.3rem;
+}
+
+.new_footer div ul li img.img-fluid {
+    width: 1.5rem;
+}
+
+.new_footer .list-unstyled li a {
+    color: white !important;
+    text-decoration: none;
+}
+
+/* ========================== */
+.profileimg{
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    border:10px solid white;
+    position: relative; 
+    width: 200px; 
+    height: 200px; 
+    overflow: hidden;
+    border-radius: 50%;
+    display: block;
+    margin-top: 2.4rem;
+}
+.profilechange button{
+    margin-left: 3.2rem;
+}
+.profilechangecon button{
+
+    margin-left: 1.75rem;
+}
+.userdetail{
+    margin-top: 6rem;
+    margin-left: 4rem;
+}
+
+.containers{
+    display: inline;
+}
+
+.edit-button {
+    border-radius: 10px;
+    background-color: #5865f2;
+    border: 2px solid #5865f2;
+    color: #fff;
+  }
+
+  
+
+.userstatus{
+    display: block;
+    margin-top: 6rem;
+    margin-left: 5rem;
+    margin-right: 4rem;
+  }
+.banner{
+    display:flex;
+}
+.iconprofileimg{
+    border:4px solid white;
+    position: relative; 
+    width: 50px;
+    height: 50px; 
+    overflow: hidden;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 2.4rem;
+    margin:auto;
+}   
+
+  @media screen and (max-width:1024px){
+
+
+}
+  
+@media screen and (max-width:524px){
+    .banner{
+        text-align: center;
+        display:block;
+        margin-bottom: 30rem;
+    }
+    .userdetail{
+        margin-top: 1rem;
+        margin-left: 0rem;
+    }
+.userstatus{
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+.profileimg{
+    border:10px solid white;
+    position: relative; 
+    width: 200px; 
+    height: 200px; 
+    overflow: hidden;
+    border-radius: 50%;
+    display: block;
+    margin-top: 2.4rem;
+    margin:auto;
+}
+
+.profilechange button{
+    margin:auto;
+}
+}
+
+.avatar-upload {
+position: relative;
+max-width: 205px;
+margin: 50px auto;
+}
+.avatar-upload .avatar-edit {
+position: absolute;
+right: 12px;
+z-index: 1;
+top: 10px;
+}
+.avatar-upload .avatar-edit input {
+display: none;
+}
+.avatar-upload .avatar-edit input + label {
+padding:0;
+margin:0;
+display: inline-block;
+width: 34px;
+height: 34px;
+margin-bottom: 0;
+border-radius: 100%;
+background: #FFFFFF;
+border: 1px solid transparent;
+box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+cursor: pointer;
+font-weight: normal;
+transition: all 0.2s ease-in-out;
+}
+.avatar-upload .avatar-edit input + label:hover {
+background: #f1f1f1;
+border-color: #d6d6d6;
+}
+.avatar-upload .avatar-edit input + label:after {
+content: "\f040";
+font-family: 'FontAwesome';
+color: #757575;
+position: absolute;
+top: 4px;
+left: 0;
+right: 0;
+text-align: center;
+margin: auto;
+}
+
+
+
+.profileimg{
+    border:10px solid white;
+    position: relative; 
+    width: 200px; 
+    height: 200px; 
+    overflow: hidden;
+    border-radius: 50%;
+    display: block;
+    margin-top: 2.4rem;
+    margin:auto;
+}
+.avatar-upload .avatar-preview {
+box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+border:10px solid white;
+position: relative; 
+width: 200px; 
+height: 200px; 
+overflow: hidden;
+border-radius: 50%;
+display: block;
+margin-top: 2.4rem;
+margin:auto;
+}
+.avatar-upload .avatar-preview > div {
+width: 100%;
+height: 100%;
+border-radius: 100%;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
