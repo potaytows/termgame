@@ -7,7 +7,7 @@
   <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="/admin/home">AdminHome</a></li>
-      <li class="breadcrumb-item active" aria-current="page">คำขอ</li>
+      <li class="breadcrumb-item active" aria-current="page">คำขอการเติมเงิน</li>
     </ol>
   </nav>
   @if ($message = Session::get('success'))
