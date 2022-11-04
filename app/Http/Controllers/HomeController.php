@@ -79,7 +79,7 @@ class HomeController extends Controller
     public function toProd($id)
     {   
         $products = product_detail::where('game_id','=',$id)->orderBy('price')->get();
- 
+        
         return view('userProd',compact('products'));
     }
     public function toEditProfile()
@@ -91,7 +91,7 @@ class HomeController extends Controller
     }
     public function toProduct($id)
     {   
-        $product = product_detail::where('id','=',$id)->get();
+        $product = product_detail::where('id','=',$id)->first();
         $code = product::where([['product_detail_id','=',$id],['user_id','=',null]])->get();
         $codecount = $code->count();
         return view('product',compact('codecount','product'));
@@ -129,8 +129,7 @@ class HomeController extends Controller
         return view("deny",compact('reqs'));
         
     }
-
-
+ 
 
 
 }

@@ -41,6 +41,7 @@ Route::get('/admin/code/add/{id}',[HomeController::class,'toAdd']);
 
 Route::get('/home/product/{id}',[HomeController::class,'toProduct']);
 
+Route::post('/home/product/{id}/addcomment',[TransferController::class,'addComment']);
 
 Route::post('/home/product/doBuy',[App\Http\Controllers\TransferController::class,'doBuy']);
 Route::post('/admin/saveGameAdd',[App\Http\Controllers\TransferController::class,'doAddGame'])->middleware('is_admin');

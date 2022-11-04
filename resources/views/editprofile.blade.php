@@ -26,6 +26,7 @@
                             <div id="imagePreview" style="background-image: url('{{asset ('userpfp/'. $user->user_pfp) }}');">
                             </div>
                         </div>
+                        
 
                     </div>
                    <div class="profilechangecon">

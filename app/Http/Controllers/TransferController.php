@@ -10,6 +10,7 @@ use App\Models\userRequest;
 use App\Models\game;
 use App\Models\transaction;
 use App\Models\product;
+use App\Models\usersComment;
 
 class TransferController extends Controller
 
@@ -172,5 +173,23 @@ class TransferController extends Controller
         
         $user->save();
         return redirect('/home/profile')->with('success','เปลี่ยนข้อมูลแล้ว');
+    }
+    public function addComment($id,Request $request){
+        $product = product_detail::where('id','=',$id)->first();
+        $code = product::where([['product_detail_id','=',$id],['user_id','=',null]])->get();
+        $codecount = $code->count();
+        // ^ From HomeController 
+        $prod = product_detail::where('id','=',$id)->first();
+        $newcom = new usersComment();
+        $newcom->user_id = Auth()->User()->id;
+        $newcom->comment = $request->comment;
+        $newcom->product_detail_id = $prod->id;
+        $newcom->save();
+        
+        return redirect('/home/product/'.$id)->with('product','code','codecount');
+        // return view('product',compact('codecount','product'));
+        
+
+
     }
 }

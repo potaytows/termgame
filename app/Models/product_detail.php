@@ -17,6 +17,9 @@ class product_detail extends Model
     public function products(){
         return $this->hasMany(product::class);
     }
+    public function usersComment(){
+        return $this->hasMany(usersComment::class);
+    }
 
     protected $fillable = [
         'product_name',

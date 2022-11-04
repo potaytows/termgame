@@ -15,7 +15,12 @@ return new class extends Migration
     {
         Schema::create('users_comments', function (Blueprint $table) {
             $table->id();
+            $table->integer('user_id');
+            $table->integer('product_detail_id');
+            $table->string('comment');
+            $table->string('attachedimg')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

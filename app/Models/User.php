@@ -25,6 +25,9 @@ class User extends Authenticatable
     public function products(){
         return $this->hasMany(product::class);
     }
+    public function comments(){
+        return $this->hasMany(usersComment::class);
+    }
 
     /**
      * The attributes that are mass assignable.
