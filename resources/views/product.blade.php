@@ -51,11 +51,12 @@
   <input type="text" name="comment" >
   <button type="submit">Comment</button>
   </form>
-  @foreach ($product->usersComment as $comment)
+  @foreach ($product->usersComment->sortByDesc('created_at') as $comment)
   <div class="usercomment container-fluid">
     <div><img src="{{asset('userpfp/'.$comment->user->user_pfp)}}" class="commentpfp" alt="user_pfp"></div>
     <div class="contentnUserName">
       <b>{{$comment->user->name}}</b>
+      <div class="commentcreatedat">{{$comment->created_at}}</div>
       <p class="contentcom">{{$comment->comment}}</p>
     
     </div>

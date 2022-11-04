@@ -87,7 +87,6 @@ class HomeController extends Controller
         $user = User::where('id','=',Auth()->User()->id)->first();
         return view('editprofile',compact('user'));
  
-       
     }
     public function toProduct($id)
     {   
@@ -128,6 +127,11 @@ class HomeController extends Controller
         $reqs = userRequest::find($id);
         return view("deny",compact('reqs'));
         
+    }
+    public function searchql(Request $request){
+        $res = User::query()->where('name','LIKE',"%{$request->searchkey}%")->get();
+
+        return view('searchres',compact('res'));
     }
  
 

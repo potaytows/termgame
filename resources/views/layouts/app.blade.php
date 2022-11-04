@@ -8,7 +8,8 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel = "icon" href ="https://media.tenor.com/MDwQ-TidnI0AAAAC/call-of-the-night-nazuna-nanakusa.gif"
+            type = "image/gif">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     @stack('styles')

@@ -251,7 +251,9 @@ button[disabled]{
   background-color: #cccccc;
   color: #666666;
 }
+/* =============comment================ */
 .usercomment{
+    background-color: white;
     display:flex;
     border-radius: 15px;
     padding:16px;
@@ -276,4 +278,32 @@ button[disabled]{
 }
 .contentnUserName{
     margin-left: 20px;
+}
+.commentcreatedat{
+    margin:auto;
+    display: inline;
+    font-size: 12px;
+}
+
+/* ====Searchres=========== */
+
+.eachres{
+    display: block;
+    border:1px solid black;
+    margin:10px;
+    border-radius: 10px;
+    padding:10px;
+   
+}
+.pfpofres{
+    display: inline;
+    width: 50px;
+}
+.rescon{
+    display: inline;
+    margin-left: 20px;
+}
+.linktopro{
+    float:right;
+   margin-top: 5px;
 }

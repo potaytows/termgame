@@ -12,6 +12,18 @@
     @endif
     <div class="row justify-content-center">
         <div class="col-md-8">
+            <div class="searchEngine">
+                <h4>ค้นหาUsers
+                </h4>
+                <form action="/search" method="POST"> 
+                @csrf
+                <input type="text" name="searchkey" value="" required>
+                <button type="submit">Search</button>
+                
+                </form>
+
+            </div>
+            <hr>
             <div class="card">
                 <div class="card-header">{{ __('ยินดีต้อนรับ') }}</div>
                     <div class="card-body">

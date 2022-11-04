@@ -60,3 +60,5 @@ Route::post('/admin/topup/deny/con',[App\Http\Controllers\TransferController::cl
 Route::post('/home/savereq',[App\Http\Controllers\TransferController::class,'saveReq']);
 
 
+
+Route::post('/search',[App\Http\Controllers\HomeController::class,'searchql']);
