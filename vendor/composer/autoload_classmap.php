@@ -35,6 +35,7 @@ return array(
     'App\\Models\\product_detail' => $baseDir . '/app/Models/product_detail.php',
     'App\\Models\\transaction' => $baseDir . '/app/Models/transaction.php',
     'App\\Models\\userRequest' => $baseDir . '/app/Models/userRequest.php',
+    'App\\Models\\usersComment' => $baseDir . '/app/Models/usersComment.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',
     'App\\Providers\\BroadcastServiceProvider' => $baseDir . '/app/Providers/BroadcastServiceProvider.php',
