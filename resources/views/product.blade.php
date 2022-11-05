@@ -53,7 +53,7 @@
   </form>
   @foreach ($product->usersComment->sortByDesc('created_at') as $comment)
   <div class="usercomment container-fluid">
-    <div><img src="{{asset('userpfp/'.$comment->user->user_pfp)}}" class="commentpfp" alt="user_pfp"></div>
+    <div><img src="{{asset('userpfp/'.$comment->user->user_pfp)}}" class="commentpfp" alt="pfp"></div>
     <div class="contentnUserName">
       <b>{{$comment->user->name}}</b>
       <div class="commentcreatedat">{{$comment->created_at}}</div>
