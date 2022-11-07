@@ -307,3 +307,7 @@ button[disabled]{
     float:right;
    margin-top: 5px;
 }
+.statusonline{
+    color:rgb(44, 221, 0);
+    
+}

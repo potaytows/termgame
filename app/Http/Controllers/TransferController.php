@@ -147,7 +147,7 @@ class TransferController extends Controller
     }
 
     public function doEditProfile(Request $request){
-        // dd($request);
+        dd($request);
         $user = User::find(Auth()->User()->id);
         if ($request->newname == null){
 
@@ -179,6 +179,7 @@ class TransferController extends Controller
         $code = product::where([['product_detail_id','=',$id],['user_id','=',null]])->get();
         $codecount = $code->count();
         // ^ From HomeController 
+        
         $prod = product_detail::where('id','=',$id)->first();
         $newcom = new usersComment();
         $newcom->user_id = Auth()->User()->id;

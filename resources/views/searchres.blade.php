@@ -19,6 +19,9 @@
     @endif
    <div class="container">
     <div class="res">
+    @if (count($res) == 0)
+    <h4>Nothing were found!</h4>
+    @endif
     @foreach ($res as $user)
     <div class="eachres">
             <img src="{{asset('userpfp/'.$user->user_pfp)}}" class="pfpofres" alt="user_pfp">

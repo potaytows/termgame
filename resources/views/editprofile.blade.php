@@ -35,7 +35,7 @@
                 
                 </div>
                 <div class="userdetail">
-                    <b>ชื่อ</b> :<input class="newnameinput form-control form-control-sm" id=""name="newname" type="text" placeholder="{{$user->name}}" aria-label=".form-control-sm example"><br>
+                    <b>ชื่อ</b> :<input class="newnameinput form-control form-control-sm" id="" name="newname" type="text" placeholder="{{$user->name}}" aria-label=".form-control-sm example"><br>
                     <div class="row mb-3">
                         <label for="" class="col-md-4 col-form-label text-md-end">{{ __('เพศ :') }}</label>
                         <div class="col-md-6 mt-2">
