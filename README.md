@@ -1,2 +1,2 @@
 # mywebdev
-some scuffed Laravel web
+Game top-up website using Laravel
